@@ -1,1214 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Advocate Tarkeshwar Singh | Lawyer in Bhiwadi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-        content="Advocate Tarkeshwar Singh, BA LLB – professional legal services in Bhiwadi. Civil disputes, property matters, cheque bounce cases, documentation and legal notices." />
 
   <style>
-    :root {
-      --primary: #0c2954;
-      --primary-soft: #004a9f;
-      --accent: #c49a3a;
-      --bg: #f5f7fb;
-      --text-dark: #111827;
-      --text-muted: #6b7280;
-      --shadow-soft: 0 10px 25px rgba(0,0,0,0.08);
-      --radius-lg: 14px;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-
     body {
-      background: #f3f4f6;
-      color: var(--text-dark);
-      line-height: 1.6;
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f5f7fb;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
+    header {
+      background: #ffffff;
+      padding: 20px 40px;
+      font-weight: 600;
+      font-size: 18px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     }
 
     .container {
-      width: 95%;
-      max-width: 1120px;
-      margin: 0 auto;
+      width: 90%;
+      margin: auto;
+      max-width: 1200px;
     }
 
-    /* HEADER / NAVBAR */
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e5e7eb;
-      position: sticky;
-      top: 0;
-      z-index: 40;
-    }
-
-    .nav {
+    .hero {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 0;
+      padding: 60px 0;
     }
 
-    .nav-left h1 {
-      font-size: 20px;
-      font-weight: 700;
-      color: var(--primary);
-    }
-
-    .nav-left span {
-      display: block;
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 2px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      font-size: 13px;
-    }
-
-    .nav-links a {
-      color: #374151;
-      position: relative;
-    }
-
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 0;
-      height: 2px;
-      background: var(--accent);
-      transition: width 0.2s ease;
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    /* HERO – Khaitan-style split layout */
-    .hero {
-      padding: 70px 0 60px;
-      background: var(--bg);
-    }
-
-    .hero-inner {
-      display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero-left-eyebrow {
-      font-size: 20px;
-      color: #0085b8;
-      font-weight: 500;
+    .hero-left h1 {
+      font-size: 42px;
+      color: #004aad;
       margin-bottom: 10px;
     }
 
-    .hero-title-big {
-      font-size: 40px;
-      line-height: 1.1;
-      font-weight: 700;
-      color: var(--primary-soft);
-      margin-bottom: 18px;
+    .hero-left p {
+      font-size: 17px;
+      max-width: 500px;
+      line-height: 1.6;
     }
-
-    .hero-subtext {
-      font-size: 14px;
-      color: #4b5563;
-      max-width: 520px;
-      margin-bottom: 26px;
-    }
-
-    .hero-buttons-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .hero-big-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px 22px;
-      border-radius: 999px;
-      font-size: 13px;
-      border: 1px solid var(--primary-soft);
-      background: #ffffff;
-      color: var(--primary-soft);
-      cursor: pointer;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
-    }
-
-    .hero-big-btn.primary {
-      background: var(--primary-soft);
-      color: #ffffff;
-    }
-
-    .hero-big-btn span {
-      margin-left: 6px;
-    }
-
-    .hero-big-btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.18);
-    }
-
-    .hero-right {
-      position: relative;
-      min-height: 280px;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 20px 45px rgba(0,0,0,0.2);
-      background: #111827;
-    }
-
-    .hero-right <div class="hero-right">
-  <img src="hero-office.jpg"
-       alt="Advocate Tarkeshwar Singh chamber"
-       class="hero-image" />
-</div>
-}
 
     .hero-image {
+      width: 500px;
+      height: 300px;
+      border-radius: 18px;
+      object-fit: cover;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
       opacity: 0;
-      animation: fadeHero 1.4s ease forwards;
+      animation: fadeIn 1.4s forwards;
     }
 
-    @keyframes fadeHero {
-      to { opacity: 1; }
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
     }
 
-    /* GENERIC SECTIONS */
     section {
-      padding: 44px 0;
+      padding: 50px 0;
     }
 
-    .section-heading {
-      text-align: center;
-      margin-bottom: 26px;
-    }
-
-    .section-heading h2 {
-      font-size: 22px;
-      margin-bottom: 5px;
-    }
-
-    .section-heading p {
-      font-size: 13px;
-      color: var(--text-muted);
-    }
-
-    .two-col {
-      display: grid;
-      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
-      gap: 24px;
-      align-items: flex-start;
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: var(--radius-lg);
-      padding: 16px 16px 18px;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .card h3 {
-      font-size: 15px;
-      margin-bottom: 6px;
-    }
-
-    .card p {
-      font-size: 13px;
-      color: #4b5563;
-    }
-
-    .grid {
-      display: grid;
-      gap: 18px;
-    }
-
-    .grid-3 {
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    }
-
-    .bullet-list {
-      margin-top: 6px;
-      font-size: 12px;
-      color: #4b5563;
-    }
-
-    .bullet-list li {
-      margin-left: 16px;
-      margin-bottom: 3px;
-    }
-
-    .about-box {
-      background: #ffffff;
-      border-radius: var(--radius-lg);
-      padding: 18px 18px 20px;
-      box-shadow: var(--shadow-soft);
-      font-size: 13px;
-    }
-
-    .about-box h3 {
-      font-size: 16px;
-      margin-bottom: 8px;
-    }
-
-    .about-highlight {
-      border-left: 3px solid var(--accent);
-      padding-left: 10px;
-      margin: 10px 0;
-      font-size: 12px;
-      color: #374151;
-    }
-
-    /* WHY CHOOSE */
-    .why-list {
-      font-size: 13px;
-      color: #374151;
-    }
-
-    .why-list li {
-      margin-left: 16px;
-      margin-bottom: 6px;
-    }
-
-    /* TESTIMONIALS */
-    .testimonial {
-      font-size: 13px;
-      color: #374151;
-      position: relative;
-      padding-left: 18px;
-    }
-
-    .testimonial::before {
-      content: "“";
-      position: absolute;
-      left: 0;
-      top: -6px;
-      font-size: 32px;
-      color: var(--accent);
-      opacity: 0.4;
-    }
-
-    .testimonial-name {
-      margin-top: 10px;
-      font-weight: 600;
-      font-size: 12px;
-      color: #111827;
-    }
-
-    .testimonial-meta {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    /* FAQ */
-    .faq-item {
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: var(--shadow-soft);
-      padding: 10px 14px;
-      font-size: 13px;
-    }
-
-    .faq-item summary {
-      cursor: pointer;
-      font-weight: 600;
-      list-style: none;
-    }
-
-    .faq-item summary::-webkit-details-marker {
-      display: none;
-    }
-
-    .faq-item p {
-      margin-top: 6px;
-      color: #4b5563;
-    }
-
-    /* CONTACT */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.1fr);
-      gap: 20px;
-    }
-
-    .contact-item {
-      font-size: 13px;
-      margin-bottom: 8px;
-    }
-
-    .contact-label {
-      font-weight: 600;
-      color: #374151;
-    }
-
-    .contact-form {
-      display: grid;
-      gap: 10px;
-      font-size: 13px;
-    }
-
-    .contact-form label {
-      font-weight: 500;
-      font-size: 12px;
-      margin-bottom: 3px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 8px 10px;
-      border-radius: 8px;
-      border: 1px solid #d1d5db;
-      font-size: 13px;
-    }
-
-    .contact-form textarea {
-      resize: vertical;
-      min-height: 80px;
-    }
-
-    .contact-note {
-      font-size: 11px;
-      color: var(--text-muted);
-      margin-top: 4px;
-    }
-
-    iframe.map {
-      width: 100%;
-      min-height: 220px;
-      border: 0;
-      border-radius: 14px;
-      box-shadow: var(--shadow-soft);
-      margin-top: 18px;
-    }
-
-    /* Contact section banner */
-    .contact-bg {
-      background: url('contact-background.jpg') center/cover no-repeat;
-      border-radius: 14px;
-      min-height: 180px;
-      box-shadow: 0 10px 28px rgba(0,0,0,0.18);
-      margin-bottom: 20px;
-    }
-
-    /* FLOATING BUTTONS (desktop) */
-    .floating-btn {
-      position: fixed;
-      right: 16px;
-      width: 52px;
-      height: 52px;
-      border-radius: 999px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      color: #fff;
-      cursor: pointer;
-      box-shadow: 0 14px 30px rgba(0,0,0,0.35);
-      z-index: 30;
-    }
-
-    .floating-whatsapp {
-      bottom: 86px;
-      background: #25d366;
-    }
-
-    .floating-call {
-      bottom: 24px;
-      background: var(--primary);
-      font-size: 20px;
-    }
-
-    /* SIDE NAV (right vertical menu) */
-    .side-nav {
-      position: fixed;
-      right: 18px;
-      top: 50%;
-      transform: translateY(-50%);
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      z-index: 25;
-      font-size: 11px;
-    }
-
-    .side-nav a {
-      background: rgba(12,41,84,0.94);
-      color: #fff;
-      padding: 6px 10px;
-      border-radius: 999px;
-      opacity: 0.75;
-    }
-
-    .side-nav a:hover,
-    .side-nav a.active {
-      opacity: 1;
-      background: var(--accent);
-      color: #111827;
-    }
-
-    /* MOBILE ACTION BAR */
-    .mobile-action-bar {
-      display: none;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background: #ffffff;
-      border-top: 1px solid #e5e7eb;
-      box-shadow: 0 -4px 12px rgba(0,0,0,0.12);
-      z-index: 35;
-    }
-
-    .mobile-action-inner {
-      display: flex;
-      justify-content: space-around;
-      padding: 6px 8px;
-    }
-
-    .mobile-action-item {
-      flex: 1;
-      text-align: center;
-      font-size: 11px;
-      color: #111827;
-    }
-
-    .mobile-action-item span.icon {
-      display: block;
-      font-size: 17px;
-      margin-bottom: 2px;
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      .hero-inner,
-      .two-col,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
-      .hero {
-        padding-top: 42px;
-      }
-      .hero-title-big {
-        font-size: 30px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 4px;
-      }
-      .nav-links {
-        flex-wrap: wrap;
-      }
-      .side-nav {
-        display: none;
-      }
-      .floating-btn {
-        display: none;
-      }
-      .mobile-action-bar {
-        display: block;
-      }
-    }
-
-    /* FOOTER */
     footer {
-      background: #020617;
-      color: #9ca3af;
-      font-size: 11px;
-      padding: 14px 0 40px; /* extra bottom so it stays above mobile bar */
-      margin-top: 18px;
-    }
-
-    footer .container {
-      display: flex;
-      flex-direction: column;
-      gap: 4px;
       text-align: center;
-    }
-
-    footer a {
-      color: #e5e7eb;
-    }
-
-    /* DISCLAIMER POPUP */
-    .disclaimer-popup {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.72);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-    }
-
-    .disclaimer-box {
-      background: #ffffff;
-      padding: 28px 22px;
-      border-radius: 14px;
-      max-width: 640px;
-      color: #111;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.35);
-      font-size: 14px;
-      line-height: 1.7;
-    }
-
-    .disclaimer-box h2 {
-      margin-bottom: 12px;
-      color: var(--primary);
-    }
-
-    .disclaimer-actions {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 10px;
-      margin-top: 10px;
-      font-size: 12px;
-    }
-
-    .disclaimer-checkbox-label {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .accept-btn {
-      padding: 9px 16px;
-      background: var(--primary);
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 13px;
-    }
-
-    .accept-btn:disabled {
-      background: #9ca3af;
-      cursor: not-allowed;
+      padding: 30px;
+      background: #e9eef7;
     }
   </style>
-
-  <!-- Basic LocalBusiness / LegalService Schema (SEO) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LegalService",
-    "name": "Advocate Tarkeshwar Singh",
-    "image": "https://your-domain.com/hero-office.jpg",
-    "url": "https://your-domain.com",
-    "telephone": "+91-93522-19123",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Bhiwadi Court Area, U.I.T.",
-      "addressLocality": "Bhiwadi",
-      "addressRegion": "Rajasthan",
-      "postalCode": "301019",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 28.204453,
-      "longitude": 76.845025
-    },
-    "areaServed": [
-      "Bhiwadi",
-      "Tapukara",
-      "Khushkhera",
-      "Neemrana",
-      "Rewari"
-    ],
-    "priceRange": "₹₹"
-  }
-  </script>
 </head>
 
 <body>
 
-<!-- DISCLAIMER POPUP -->
-<div id="disclaimer" class="disclaimer-popup">
-  <div class="disclaimer-box">
-    <h2>Disclaimer</h2>
-    <p>
-      As per the rules of the Bar Council of India, lawyers are not permitted to solicit or advertise.
-      By accessing this website, you acknowledge and confirm that you are seeking information relating
-      to <strong>Advocate Tarkeshwar Singh</strong> of your own accord and that there has been no form
-      of advertisement, solicitation or inducement by the advocate or his office.
-    </p>
-    <p>
-      The contents of this website are for informational purposes only and should not be interpreted as
-      legal advice. No material / information on this website is intended to create an advocate–client
-      relationship. You are advised to seek specific legal advice for your individual situation.
-      Advocate Tarkeshwar Singh shall not be liable for any action taken based on the information provided here.
-    </p>
-
-    <div class="disclaimer-actions">
-      <label class="disclaimer-checkbox-label">
-        <input type="checkbox" id="disclaimer-check" />
-        <span>I have read and accept the above.</span>
-      </label>
-      <button class="accept-btn" id="disclaimer-btn" disabled>Proceed to Website</button>
-    </div>
+  <!-- TOP UPDATE INDICATOR -->
+  <div style="background:#fff3cd;padding:8px;text-align:center;font-size:14px;">
+    Website Updated Successfully — If you see this text, new code is LIVE ✔
   </div>
-</div>
 
-<header>
-  <div class="container nav">
-    <div class="nav-left">
-      <h1>Advocate Tarkeshwar Singh</h1>
-      <span>BA LLB &nbsp;•&nbsp; Lawyer in Bhiwadi, Rajasthan</span>
-    </div>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#practice-areas">Practice Areas</a>
-      <a href="#why">Why Choose</a>
-      <a href="#reviews">Clients</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header>
+    Advocate Tarkeshwar Singh
+  </header>
 
-<!-- SIDE NAVIGATION (right) -->
-<nav class="side-nav">
-  <a href="#about">Expertise</a>
-  <a href="#practice-areas">Practice Areas</a>
-  <a href="#reviews">Clients</a>
-  <a href="#faq">FAQ</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div>
-        <div class="hero-left-eyebrow">Expertise</div>
-
-        <h2 class="hero-title-big">
-          Clear, practical legal<br />
-          solutions in Bhiwadi.
-        </h2>
-
-        <p class="hero-subtext">
-          Advocate Tarkeshwar Singh, BA LLB – assisting individuals, families and businesses in
-          civil, property and cheque bounce matters with professional, ethical and transparent
-          legal support.
-        </p>
-
-        <div class="hero-buttons-row">
-          <a href="#practice-areas" class="hero-big-btn primary">
-            Explore Practice Areas <span>→</span>
-          </a>
-          <a href="#contact" class="hero-big-btn">
-            Book a Consultation <span>→</span>
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <!-- Hero image -->
-        <img src="hero-office.jpg" alt="Advocate Tarkeshwar Singh chamber" class="hero-image" />
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container two-col">
-      <div>
-        <div class="section-heading" style="text-align:left; margin-bottom:12px;">
-          <h2>About Advocate Tarkeshwar Singh</h2>
-          <p>BA LLB – practising advocate at Bhiwadi</p>
-        </div>
-
-        <div class="about-box">
-          <p>
-            Advocate Tarkeshwar Singh provides straightforward and reliable legal guidance to
-            clients in and around Bhiwadi. The focus is on understanding your facts and documents
-            clearly, explaining the law in simple language and guiding you step-by-step through
-            each stage of your matter.
-          </p>
-
-          <div class="about-highlight">
-            “The aim is to give honest and practical advice – not false assurances – and to keep
-            clients informed about the progress and options in their case.”
-          </div>
-
-          <p>
-            Whether your issue relates to civil disputes, property documentation, cheque bounce
-            complaints or legal notices, matters are handled with professionalism, confidentiality
-            and respect. Wherever possible, amicable settlement is explored first to save time,
-            cost and stress.
-          </p>
-        </div>
-      </div>
-
-      <div class="about-box">
-        <!-- About-section image -->
-        <img src="about-chamber.jpg"
-             alt="Advocate Tarkeshwar Singh consultation"
-             style="width:100%; border-radius:14px; margin-bottom:12px; box-shadow:0 8px 18px rgba(0,0,0,0.15);">
-
-        <h3>Key Focus Areas</h3>
-        <ul class="bullet-list">
-          <li>Client-centric approach – detailed understanding of facts and documents</li>
-          <li>Transparent discussion of procedure, timeline and likely outcomes</li>
-          <li>Regular updates via phone or WhatsApp during the course of matter</li>
-          <li>Clear and reasonable fee structure discussed upfront</li>
-        </ul>
-
-        <h3 style="margin-top:16px;">Languages</h3>
-        <ul class="bullet-list">
-          <li>Hindi</li>
-          <li>English</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRACTICE AREAS -->
-  <section id="practice-areas">
-    <div class="container">
-      <div class="section-heading">
-        <h2>Practice Areas</h2>
-        <p>Legal services tailored to your individual and business needs</p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="card">
-          <h3>Civil Disputes &amp; Recovery</h3>
-          <p>
-            Assistance in civil suits, recovery of money, agreement disputes and other related civil matters.
-          </p>
-          <ul class="bullet-list">
-            <li>Civil suits for recovery</li>
-            <li>Agreement / contract disputes</li>
-            <li>Injunction and declaration suits</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Property &amp; Documentation</h3>
-          <p>
-            Guidance in property-related issues and documentation to help protect your rights and transactions.
-          </p>
-          <ul class="bullet-list">
-            <li>Property dispute consultation</li>
-            <li>Sale deed, rent agreement, GPA, affidavits</li>
-            <li>Legal opinion on property papers</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Cheque Bounce &amp; NI Act Matters</h3>
-          <p>
-            Drafting of notices and handling matters under the Negotiable Instruments Act due to cheque bouncing.
-          </p>
-          <ul class="bullet-list">
-            <li>Cheque bounce complaints</li>
-            <li>Reply to legal notices</li>
-            <li>Settlement / compromise guidance</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Legal Notices &amp; Opinions</h3>
-          <p>
-            Drafting strong and clear legal notices, replies and written legal opinions suited to your case.
-          </p>
-          <ul class="bullet-list">
-            <li>Notice drafting &amp; replies</li>
-            <li>Agreement / document vetting</li>
-            <li>Written legal opinions</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Basic Family &amp; Other Matters</h3>
-          <p>
-            Initial guidance in select family and other matters, with referral support where appropriate.
-          </p>
-          <ul class="bullet-list">
-            <li>Guidance in matrimonial / family issues</li>
-            <li>Mediation and settlement support</li>
-            <li>Referral to suitable specialists when needed</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Consultation &amp; Preventive Advice</h3>
-          <p>
-            Focus on preventive legal advice to help avoid disputes and reduce legal risk for individuals
-            and small businesses.
-          </p>
-          <ul class="bullet-list">
-            <li>Pre-litigation consultation</li>
-            <li>Review of contracts and documents</li>
-            <li>Risk awareness and compliance guidance</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY CHOOSE -->
-  <section id="why">
-    <div class="container two-col">
-      <div>
-        <div class="section-heading" style="text-align:left; margin-bottom:12px;">
-          <h2>Why Choose This Chamber</h2>
-          <p>Professional, accessible and transparent legal support</p>
-        </div>
-
-        <ul class="why-list">
-          <li><strong>Personal attention:</strong> Every matter is handled by Advocate Tarkeshwar Singh himself.</li>
-          <li><strong>Clear communication:</strong> Legal process and options are explained in simple language.</li>
-          <li><strong>Ethical approach:</strong> No unrealistic promises; focus on practical and lawful solutions.</li>
-          <li><strong>Local understanding:</strong> Familiarity with Bhiwadi, industrial areas and local issues.</li>
-          <li><strong>Flexible communication:</strong> Updates and short clarifications over phone / WhatsApp, where possible.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>How a Typical Consultation Works</h3>
-        <ul class="bullet-list">
-          <li><strong>1. Initial call / message</strong> – brief overview of your matter and suitable appointment time.</li>
-          <li><strong>2. Detailed discussion</strong> – in person or by call with relevant documents.</li>
-          <li><strong>3. Advice and options</strong> – explanation of legal position, possible remedies and next steps.</li>
-          <li><strong>4. Representation / drafting</strong> – filing, documentation or notice drafting as agreed.</li>
-        </ul>
-        <p style="margin-top:10px; font-size:12px; color:#6b7280;">
-          Consultation charges and professional fees are discussed in advance in a transparent manner.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section id="reviews">
-    <div class="container">
-      <div class="section-heading">
-        <h2>Client Feedback</h2>
-        <p>Some words shared by clients who have taken legal assistance</p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="testimonial">
-            Very polite and patient in listening to my full matter.
-            Explained the process clearly and helped in drafting a strong legal notice.
-          </div>
-          <div class="testimonial-name">M. Sharma</div>
-          <div class="testimonial-meta">Civil / recovery matter (Bhiwadi)</div>
-        </div>
-
-        <div class="card">
-          <div class="testimonial">
-            Guided me properly in a cheque bounce issue. I was informed at each date and the
-            entire procedure was explained beforehand.
-          </div>
-          <div class="testimonial-name">R. Gupta</div>
-          <div class="testimonial-meta">Cheque bounce matter</div>
-        </div>
-
-        <div class="card">
-          <div class="testimonial">
-            Took time to check all property papers and pointed out issues which could have
-            caused trouble later. Very helpful preventive advice.
-          </div>
-          <div class="testimonial-name">S. Verma</div>
-          <div class="testimonial-meta">Property documentation</div>
-        </div>
-      </div>
-
-      <p style="font-size:12px; color:#6b7280; margin-top:14px; text-align:center;">
-        For updated reviews, please refer to the Google Business profile of Advocate Tarkeshwar Singh.
+  <!-- HERO SECTION -->
+  <section class="container hero">
+    <div class="hero-left">
+      <h1>Clear, Practical Legal Solutions in Bhiwadi</h1>
+      <p>
+        Advocate Tarkeshwar Singh, BA LLB — assisting individuals, families, and businesses
+        in civil and cheque bounce matters with transparency, professionalism, and ethical legal support.
       </p>
+      <button style="padding:12px 20px;border-radius:30px;background:#004aad;color:white;border:none;margin-top:20px;">
+        Book Consultation →
+      </button>
+    </div>
+
+    <div class="hero-right">
+      <!-- 🔥 FIXED HERO IMAGE (GitHub Direct Link) -->
+      <img class="hero-image"
+        src="https://raw.githubusercontent.com/tnsingh2506-collab/advocate-website/main/hero-office.jpg"
+        alt="Advocate Tarkeshwar Singh chamber">
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="container">
-      <div class="section-heading">
-        <h2>Frequently Asked Questions</h2>
-        <p>General information about consultations and legal process</p>
-      </div>
-
-      <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px;">
-        <details class="faq-item">
-          <summary>Do I need to take an appointment before visiting?</summary>
-          <p>
-            Yes, it is advisable to fix an appointment by phone or WhatsApp before visiting,
-            so that sufficient time can be reserved for discussion of your matter.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>What documents should I bring for the first meeting?</summary>
-          <p>
-            Carry all documents related to your matter – agreements, notices, FIR, court papers,
-            cheques, bank memos, property papers etc. Even rough copies are useful for the first review.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Is the discussion during consultation kept confidential?</summary>
-          <p>
-            Yes. All discussions with clients are treated as confidential. Privacy and dignity of
-            clients is maintained at all times.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Are consultation charges adjustable in the case fee?</summary>
-          <p>
-            This depends on the nature of the matter and is informed at the time of consultation.
-            The fee structure is always discussed transparently at the beginning.
-          </p>
-        </details>
-
-        <details class="faq-item">
-          <summary>Do you handle matters outside Bhiwadi?</summary>
-          <p>
-            Subject to workload and nature of the case, select matters may be taken up in nearby
-            areas. In other cases, suitable referral options may be suggested.
-          </p>
-        </details>
-      </div>
-    </div>
+  <!-- ABOUT SECTION -->
+  <section class="container">
+    <h2>About Advocate Tarkeshwar Singh</h2>
+    <p>
+      BA LLB — Practicing advocate at Bhiwadi offering practical strategic legal guidance.
+    </p>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <div class="section-heading">
-        <h2>Contact &amp; Chamber Location</h2>
-        <p>Reach out for appointments, consultations or brief queries</p>
-      </div>
-
-      <!-- contact banner image -->
-      <div class="contact-bg"></div>
-
-      <div class="contact-grid">
-        <div class="card">
-          <div class="contact-item">
-            <span class="contact-label">Chamber Location: </span>
-            <span>Bhiwadi Court area, U.I.T., Bhiwadi, Rajasthan 301019</span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Phone: </span>
-            <a href="tel:+919352219123">093522 19123</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">WhatsApp: </span>
-            <a href="https://wa.me/919352219123?text=Hello%20Sir,%20I%20need%20legal%20assistance.%20Please%20guide%20me."
-               target="_blank" rel="noopener">
-              Click to open chat
-            </a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Email: </span>
-            <a href="mailto:tnsingh2506@gmail.com">tnsingh2506@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Chamber hours: </span>
-            <span>Monday – Saturday, 9:00 AM to 7:00 PM (by prior appointment)</span>
-          </div>
-
-          <p class="contact-note" style="margin-top:8px;">
-            For urgent matters or to check availability, please prefer a phone call or WhatsApp message.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3 style="margin-bottom:8px;">Request an Appointment / Send a Brief Query</h3>
-          <form class="contact-form" action="mailto:tnsingh2506@gmail.com" method="post" enctype="text/plain">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="Name" required />
-            </div>
-            <div>
-              <label for="phone">Phone / WhatsApp</label>
-              <input id="phone" name="Phone" required />
-            </div>
-            <div>
-              <label for="matter">Type of matter</label>
-              <input id="matter" name="Matter type" placeholder="Civil / property / cheque bounce / other" />
-            </div>
-            <div>
-              <label for="pref">Preferred date &amp; time</label>
-              <input id="pref" name="Preferred time"
-                     placeholder="e.g. Tomorrow after 4 PM" />
-            </div>
-            <div>
-              <label for="message">Brief details</label>
-              <textarea id="message" name="Details"
-                        placeholder="Please mention important dates / facts in short."></textarea>
-            </div>
-            <button type="submit" style="
-              margin-top:4px;
-              padding:9px 16px;
-              border-radius:999px;
-              border:none;
-              background:var(--primary);
-              color:#fff;
-              font-size:13px;
-              cursor:pointer;">
-              Submit via Email
-            </button>
-            <p class="contact-note">
-              This simple form uses your email app to send the details. For the fastest response,
-              you may also directly message on WhatsApp.
-            </p>
-          </form>
-        </div>
-      </div>
-
-      <!-- Google Maps Embed -->
-      <iframe
-        class="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112273.35134659828!2d76.785025!3d28.204453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d37fa6b3b76b3%3A0xf8d4a0eecc1b7130!2sAdvocate%20Tarkeshwar%20Singh!5e0!3m2!1sen!2sin!4v1701940800000!5m2!1sen!2sin"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-
-      <div style="margin-top:10px; text-align:center;">
-        <a href="https://www.google.com/maps/dir/?api=1&destination=28.204453,76.845025"
-           target="_blank" rel="noopener"
-           style="font-size:13px; color:#004a9f; text-decoration:underline;">
-          Get Directions on Google Maps →
-        </a>
-      </div>
-    </div>
+  <!-- CONTACT SECTION -->
+  <section class="container">
+    <h2>Contact</h2>
+    <p>📍 Bhiwadi Court, UIT, Bhiwadi, Rajasthan<br>
+      📞 9352219123<br>
+      ✉️ tnsingh2506@gmail.com
+    </p>
   </section>
 
-</main>
-
-<!-- FLOATING WHATSAPP & CALL BUTTONS (desktop) -->
-<a class="floating-btn floating-whatsapp"
-   href="https://wa.me/919352219123?text=Hello%20Sir,%20I%20need%20legal%20assistance.%20Please%20guide%20me."
-   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-  💬
-</a>
-
-<a class="floating-btn floating-call" href="tel:+919352219123" aria-label="Call now">
-  📞
-</a>
-
-<!-- MOBILE ACTION BAR -->
-<div class="mobile-action-bar">
-  <div class="mobile-action-inner">
-    <a class="mobile-action-item" href="tel:+919352219123">
-      <span class="icon">📞</span>
-      <span>Call</span>
-    </a>
-    <a class="mobile-action-item"
-       href="https://wa.me/919352219123?text=Hello%20Sir,%20I%20need%20legal%20assistance.%20Please%20guide%20me."
-       target="_blank" rel="noopener">
-      <span class="icon">💬</span>
-      <span>WhatsApp</span>
-    </a>
-    <a class="mobile-action-item"
-       href="https://www.google.com/maps/dir/?api=1&destination=28.204453,76.845025"
-       target="_blank" rel="noopener">
-      <span class="icon">📍</span>
-      <span>Directions</span>
-    </a>
-  </div>
-</div>
-
-<footer>
-  <div class="container">
-    <div>
-      Disclaimer: This website is not intended to advertise or solicit clients. Content is for
-      general information only and does not constitute legal advice or create an advocate–client
-      relationship.
-    </div>
-    <div>
-      © <span id="year"></span> Advocate Tarkeshwar Singh, Bhiwadi. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-<script>
-  // Update footer year
-  document.getElementById("year").textContent = new Date().getFullYear();
-
-  // Disclaimer logic
-  const disclaimerCheck = document.getElementById("disclaimer-check");
-  const disclaimerBtn = document.getElementById("disclaimer-btn");
-  const disclaimerBox = document.getElementById("disclaimer");
-
-  disclaimerCheck.addEventListener("change", function () {
-    disclaimerBtn.disabled = !this.checked;
-  });
-
-  disclaimerBtn.addEventListener("click", function () {
-    if (!disclaimerCheck.checked) return;
-    disclaimerBox.style.display = "none";
-  });
-
-  // Smooth scroll for in-page links
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener("click", function (e) {
-      const targetId = this.getAttribute("href");
-      if (targetId.length < 2) return;
-      const target = document.querySelector(targetId);
-      if (!target) return;
-      e.preventDefault();
-      window.scrollTo({
-        top: target.offsetTop - 70,
-        behavior: "smooth"
-      });
-    });
-  });
-
-  // Highlight active section in side nav
-  const sections = document.querySelectorAll("section[id]");
-  const navLinks = document.querySelectorAll(".side-nav a");
-
-  window.addEventListener("scroll", () => {
-    let currentId = "";
-    sections.forEach(sec => {
-      const offset = sec.offsetTop - 100;
-      if (window.pageYOffset >= offset) {
-        currentId = sec.getAttribute("id");
-      }
-    });
-    navLinks.forEach(link => {
-      link.classList.toggle("active", link.getAttribute("href") === "#" + currentId);
-    });
-  });
-</script>
+  <footer>
+    © 2025 Advocate Tarkeshwar Singh — All Rights Reserved
+  </footer>
 
 </body>
-</html>
 
+</html>
