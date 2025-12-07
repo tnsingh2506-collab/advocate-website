@@ -184,6 +184,15 @@
       display: block;
     }
 
+    .hero-image {
+      opacity: 0;
+      animation: fadeHero 1.4s ease forwards;
+    }
+
+    @keyframes fadeHero {
+      to { opacity: 1; }
+    }
+
     /* GENERIC SECTIONS */
     section {
       padding: 44px 0;
@@ -390,6 +399,15 @@
       border-radius: 14px;
       box-shadow: var(--shadow-soft);
       margin-top: 18px;
+    }
+
+    /* Contact section banner */
+    .contact-bg {
+      background: url('contact-background.jpg') center/cover no-repeat;
+      border-radius: 14px;
+      min-height: 180px;
+      box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+      margin-bottom: 20px;
     }
 
     /* FLOATING BUTTONS (desktop) */
@@ -602,7 +620,7 @@
     "@context": "https://schema.org",
     "@type": "LegalService",
     "name": "Advocate Tarkeshwar Singh",
-    "image": "https://your-domain.com/office-chamber.jpg",
+    "image": "https://your-domain.com/hero-office.jpg",
     "url": "https://your-domain.com",
     "telephone": "+91-93522-19123",
     "address": {
@@ -715,8 +733,8 @@
       </div>
 
       <div class="hero-right">
-        <!-- Replace with your actual office / chamber image file -->
-        <img src="office-chamber.jpg" alt="Advocate Tarkeshwar Singh chamber" />
+        <!-- Hero image -->
+        <img src="hero-office.jpg" alt="Advocate Tarkeshwar Singh chamber" class="hero-image" />
       </div>
     </div>
   </section>
@@ -753,6 +771,11 @@
       </div>
 
       <div class="about-box">
+        <!-- About-section image -->
+        <img src="about-chamber.jpg"
+             alt="Advocate Tarkeshwar Singh consultation"
+             style="width:100%; border-radius:14px; margin-bottom:12px; box-shadow:0 8px 18px rgba(0,0,0,0.15);">
+
         <h3>Key Focus Areas</h3>
         <ul class="bullet-list">
           <li>Client-centric approach – detailed understanding of facts and documents</li>
@@ -990,6 +1013,9 @@
         <h2>Contact &amp; Chamber Location</h2>
         <p>Reach out for appointments, consultations or brief queries</p>
       </div>
+
+      <!-- contact banner image -->
+      <div class="contact-bg"></div>
 
       <div class="contact-grid">
         <div class="card">
