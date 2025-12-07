@@ -655,6 +655,63 @@
    ">
    📞
 </a>
+<style>
+.disclaimer-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.disclaimer-box {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 600px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.disclaimer-box h2 {
+  margin-bottom: 10px;
+}
+.accept-btn {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: #0c2954;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+</style>
+
+<script>
+function acceptDisclaimer() {
+  document.getElementById("disclaimer").style.display = "none";
+}
+</script>
+
+<div id="disclaimer" class="disclaimer-popup">
+  <div class="disclaimer-box">
+    <h2>Disclaimer</h2>
+    <p>
+      As per the rules of the Bar Council of India, lawyers are not permitted to solicit or advertise.
+      By accessing this website, you acknowledge and confirm that you are seeking 
+      information relating to Advocate Tarkeshwar Singh of your own accord and that no 
+      form of solicitation or advertisement has been made.
+    </p>
+    <p>
+      The content here is informational only and should not be considered legal advice. 
+      Advocate Tarkeshwar Singh shall not be responsible for actions taken based on this information.
+    </p>
+    <button class="accept-btn" onclick="acceptDisclaimer()">I Accept & Proceed</button>
+  </div>
+</div>
 </body>
 </html>
 <!-- Floating WhatsApp Button with Logo -->
@@ -673,6 +730,7 @@
            border-radius: 50%;
         ">
 </a>
+
 
 
 
